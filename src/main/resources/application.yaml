@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://172.17.0.2:8761/eureka/
+    instance:
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+server:
+  port: 9092
+spring:
+  application:
+    name: ananda
